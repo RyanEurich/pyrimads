@@ -2,7 +2,7 @@
 
 string createPyramid(int num)
 {
-    if (num = 0){
+    if (num == 0){
         return "Invalid pyrimad size";
     }
     else if (num < 0){
@@ -17,14 +17,19 @@ string createPyramid(int num)
             str = str + "-";
             j++;
         }
-        iter +=2;
+        iter++;
+        iter++;
         int k = 0;
         while (k <= i+1){
             str = str + "|";
             k++;
         }
     }
+    
+  
     //do the end case seperately
+    //add spaces
+    return str;
 }
 
 int getUserInput()
